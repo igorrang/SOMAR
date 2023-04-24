@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="Javascript/Script.JS"></script>
+    <title>Login</title>
+    <style>
+        body {
+            background-color:#004a8d;
+        }
+
+        form {
+            background-color: #FFFFFF;
+            width: 400px;
+            margin: 50px auto;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #888888;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #004a8d;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Login</h2>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
