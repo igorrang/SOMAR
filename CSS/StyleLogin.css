@@ -25,7 +25,14 @@ body
     border-radius: 8px;
     box-shadow: #e5e5e5 7px 2px 26px;
     overflow: hidden;
+    animation: 2s pulse-box-shadow infinite alternate;
 }
+
+@keyframes pulse-box-shadow {
+    100% {box-shadow: #e5e5e5 7px 2px 26px;}
+    0%   {box-shadow: #e5e5e5 7px 2px 2px;}
+}
+
 .box::before 
 {
     content: '';
