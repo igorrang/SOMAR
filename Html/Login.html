@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
-        <link rel="stylesheet" href=/CSS/StyleLogin.css>
+        <link rel="stylesheet" href=../CSS/StyleLogin.css>
     </head>
     <body>
         <div class="box">
@@ -13,7 +13,7 @@
             <form >
                 <h2>login</h2>
                  <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="text" required="required" onkeyup="this.value = this.value.toUpperCase();">
                     <span>Usuário</span>
                     <i></i>
                  </div> 
@@ -24,7 +24,7 @@
                  </div>
                  <div class="links">
                     <a href="#">Esqueceu sua senha ?</a>
-                    <a href="#">Entrar</a>
+                    <a href="#">Cadastre-se</a>
                  </div> 
                  <input type="submit" value="Entrar"> 
             </form>
