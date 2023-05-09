@@ -2,7 +2,7 @@
 .carrossel {
     position: center;
     height: 300px;
-    width: 600px;
+    width: 100%;
     top: 1015px;
     left: calc(60% - 448px);
     display: flex;
