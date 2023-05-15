@@ -1,0 +1,38 @@
+.info-extra{
+          display: flex;
+          /* background-color: red; */
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+}
+
+.grid-info {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-row-gap: 20px;
+          grid-column-gap: 20px;
+          padding: 20px;
+          /* background-color: blue;*/
+          }
+.info-card{
+          box-shadow: 4px 4px 10px gray ;
+          border-radius: 20px;
+          width: 200px;
+          height: 200px;
+          transform: scale(1);
+          transition: 0.5s;
+}
+
+.grid-info .green{background-color: #409945;}
+.grid-info .blue{background-color: #407b99;}
+.grid-info .red{background-color: #994340;}
+
+
+
+.info-card:hover{
+          transform: scale(1.1);
+          box-shadow: 4px 4px 0px gray;
+}

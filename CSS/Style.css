@@ -54,7 +54,7 @@
   
   /* Main column */
   .main {
-    flex: 70%;
+    height:auto;
     background-color: white;
     padding: 20px;
   }
