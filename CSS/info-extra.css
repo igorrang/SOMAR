@@ -1,3 +1,4 @@
+/*info extra é responsavel por manter a imagem e o card um no lado do outro*/
 .info-extra{
           display: flex;
           /* background-color: red; */
@@ -7,16 +8,25 @@
           justify-content: center;
           align-items: center;
 }
-
+/*define a quantidade de quadros em cada coluna e se deve ou nao 
+fazer warp*/
 .grid-info {
-          display: grid;
           grid-template-columns: repeat(5, 1fr);
           grid-template-rows: repeat(3, 1fr);
+          width: 90%;
           grid-row-gap: 20px;
           grid-column-gap: 20px;
           padding: 20px;
-          /* background-color: blue;*/
+          /* background-color: blue; */
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
           }
+
+/* informaçoes basicas do card como tamanho e sombra*/
 .info-card{
           box-shadow: 4px 4px 10px gray ;
           border-radius: 20px;
@@ -25,14 +35,42 @@
           transform: scale(1);
           transition: 0.5s;
 }
-
-.grid-info .green{background-color: #409945;}
+/* define o tamanho da imagem do card*/
+.info-card img{
+    width: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .grid-info .green{background-color: #409945;}
+}
+/* cores para cada painel */
 .grid-info .blue{background-color: #407b99;}
 .grid-info .red{background-color: #994340;}
 
+/* imagem chamada programa somar, esse comando faz ele desaparecer 
+ao chegar em @media max-width 1000 */
+.imagemaaa{display: block;}
 
+@media (max-width:1000px){
+          .imagemaaa{display:none;}
 
+}
+/* descriçao de cada grid aonde tem as informaçoes do card */
+.descriçao{
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+          grid-template-rows: 4fr;
+          grid-column-gap: -15px;
+          grid-row-gap: 8px;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          justify-items: center;
+}
+/* animaçao bunitinha para o card so isso mesmo*/
 .info-card:hover{
           transform: scale(1.1);
           box-shadow: 4px 4px 0px gray;
 }
+
