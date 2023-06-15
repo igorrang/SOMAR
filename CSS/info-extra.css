@@ -42,9 +42,9 @@ fazer warp*/
     align-content: center;
     justify-content: center;
     align-items: center;
-    .grid-info .green{background-color: #409945;}
 }
 /* cores para cada painel */
+.grid-info .green{background-color: #409945;}
 .grid-info .blue{background-color: #407b99;}
 .grid-info .red{background-color: #994340;}
 
